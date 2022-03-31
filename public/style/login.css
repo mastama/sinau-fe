@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&family=Karla:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+    font-family: "Poppins";
+}
+
+.loginWrap {
+    /* background-color: red; */
+    width: 70vw;
+    height: 97vh;
+    position: relative;
+    margin: auto;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    display: flex;
+}
+
+.content1 {
+    width: 40%;
+    height: 100%;
+    background: #023047;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+}
+
+.fa-arrow-left {
+    color: #fff;
+    margin: 21px;
+    cursor: pointer;
+    /* background: red; */
+}
+
+.fa-eye {
+    color: rgb(119, 110, 110);
+    cursor: pointer;
+    position: absolute;
+    right: 11%;
+    bottom: 43%;
+}
+
+.fa-arrow-left:hover {
+    margin-left: 16px;
+    margin-right: 26px;
+}
+
+.p {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.sinauWrap {
+    margin: 8%;
+    position: absolute;
+    /* background-color: bisque; */
+}
+
+.sinau {
+    color: #fff;
+    font-weight: 400;
+    font-size: 50px;
+    /* margin: auto; */
+    /* margin: 10% 10%; */
+    /* position: relative; */
+    /* background-color: red */
+}
+
+.sinau2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.login {
+    color: rgb(12, 11, 11);
+    font-weight: 400;
+    font-size: 50px;
+    margin: -25% auto auto auto;
+    /* background-color: red; */
+}
+
+.content2 {
+    /* background: red; */
+    margin: auto;
+    width: 40%;
+}
+
+.content2a {
+    margin: 0% 0% 10% 30%;
+    /* background: white; */
+    /* position: absolute; */
+}
+
+.form {
+    margin-top: 5%;
+    /* line-height: 2px; */
+}
+
+.input {
+    margin-bottom: 5%;
+}
+
+.btnLogin {
+    background-color: #014E62;
+    border: none;
+    width: 100%;
+    color: white;
+    height: 40px;
+    border-radius: 8px;
+    font: 20px "Poppins";
+    cursor: pointer;
+}
+
+.formCaps {
+    font-size: 15px;
+    margin: 2% 0 0 16%;
+}
+
+.daftar {
+    margin-left: 5px;
+}
+
+.imgLogin {
+    margin-top: 80%;
+}
