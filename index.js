@@ -41,6 +41,11 @@ app.get('/login', (req, res) => {
     res.render("pages/login/index");
 })
 
+// register
+app.get('/register', (req, res) => {
+    res.render("pages/register/index");
+})
+
 app.listen(port, () => {
     console.log(`Server is listening on ${port}`);
 })

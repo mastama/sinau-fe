@@ -1,53 +1,34 @@
-<div class="loginWrap">
-    <div class="content1">
-      <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
-      <div>
-        <div>
-          <a href="/">
-          <p class="p">Beranda</p>
-          </a>
-        </div>
-        <div class="sinauWrap">
-          <p class="sinau">Sinau.</p>
-          <p class="sinau2">Tetap Sinau,</p>
-          <p class="sinau2">Terus Sinau,</p>
-          <p class="sinau2">Sinau diRumah</p>
-        </div>
-        <img
-          class="imgLogin"
-          src="../../../assets/login/person.png"
-          alt="tidak dapat memuat gambar"
-        />
-      </div>
-    </div>
-    <div class="content2">
-      <div class="content2a">
-        <p class="login">Login</p>
-        <p class="login#">#sinaudarirumah</p>
-      </div>
-      <form action="" class="form" method="post">
-        <label for="email">Email</label>
-        <input
-          class="input"
-          type="email"
-          placeholder="contoh: example@gmail.com"
-          id="email"
-          required
-        />
-        <label for="password" class="password">Password</label>
-        <input
-          class="input"
-          type="password"
-          id="id_password"
-          placeholder="minimal 8 karakter"
-          required
-        />
-        <i class="fa-solid fa-eye" id="togglePassword"></i>
-        <button class="btnLogin">Login</button>
-        <p class="formCaps">
-          Belum memiliki akun?<a class="daftar">Daftar!</a>
-        </p>
-      </form>
-    </div>
-  </div>
-  
+<!-- <div class="text-center"> -->
+	<!-- Button HTML (to Trigger Modal) -->
+	<!-- <a href="#myModal" class="trigger-btn" data-toggle="modal">Click to Open Login Modal</a>
+</div> -->
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">				
+				<h4 class="modal-title">Member Login</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="/examples/actions/confirmation.php" method="post">
+					<div class="form-group">
+						<i class="fa fa-user"></i>
+						<input type="text" class="form-control" placeholder="Username" required="required">
+					</div>
+					<div class="form-group">
+						<i class="fa fa-lock"></i>
+						<input type="password" class="form-control" placeholder="Password" required="required">					
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>
+		</div>
+	</div>
+</div>

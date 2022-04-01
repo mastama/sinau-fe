@@ -1,7 +1,7 @@
 {
   "name": "sinau-fe",
   "version": "1.0.0",
-  "description": "",
+  "description": "Insyallah proposal skripsi dan website selesai dibulan April 2022 dan Lulus Publikasi Skripsi Mei 2022",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mastama/sinau-fe.git"
+    "url": "git+https://gitlab.com/mastama/sinau-fe.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mastama/sinau-fe/issues"
+    "url": "https://gitlab.com/mastama/sinau-fe/issues"
   },
-  "homepage": "https://github.com/mastama/sinau-fe#readme",
+  "homepage": "https://gitlab.com/mastama/sinau-fe#readme",
   "dependencies": {
     "axios": "^0.26.1",
     "cors": "^2.8.5",
