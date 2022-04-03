@@ -1,0 +1,142 @@
+<%- include('partials/header') %>
+
+<div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+        <ul class="list-unstyled components mb-5">
+            <li style="font-size:23px"><a href="index.html" class="logo">Sinau</a></li>
+            <li class="active">
+                <a href="#"><span class="fa fa-home"></span> Beranda</a>
+            </li>
+            <li>
+                <a href="#"><span class="fas fa-chalkboard"></span> Kelas </a>
+            </li>
+            <li>
+                <a href="#"><span class="fas fa-book"></span> Tugas </a>
+            </li>
+            <li>
+                <a href="#"><span class="fa fa-cogs"></span> Bagun Ruang</a>
+            </li>
+
+            <li>
+                <a href="#"><span class="fas fa-chalkboard-teacher"></span> Guru </a>
+            </li>
+            <li>
+                <a href="#"><span class="fas fa-sign-out-alt"></span> Logout</a>
+            </li>
+            <li style="margin-top: 1rem;">
+                <a href="#" style="border-bottom: none;"><span class="fas fa-user"></span> Jane Doe</a>
+            </li>
+        </ul>
+
+        <div class="footer">
+            <!-- <p>
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> All rights reserved
+        </p> -->
+        </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
+                <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button> -->
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <h2 class="mb-4">Sidebar #07</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p> -->
+        <div class="beranda">
+
+            <div class="row beranda__card1 card">
+                <div class="col-8 col-sm-9 col-md-10 col-lg-10 beranda__card1__txt">
+                    <h1>Apa Kabar Hari ini?</h1>
+                    <p>Tetap semangat belajar dan selalu jaga kesehatan<br>
+                        #sinaudirumah</p>
+                </div>
+                <div class="col-4 col-sm-2 col-md-2 col-lg-2 beranda__card1__img">
+                    <img src="/img/johan.jpg">
+                </div>
+            </div>
+
+            <div class="beranda__card2 card">
+                <h3><span class="fa fa-home"></span> Beranda</h3>
+            </div>
+
+            <div class="beranda__card3 card">
+                <div class="beranda__card3__title">
+                    <h3>Jadwal Kelas Saya</h3>
+                </div>
+                <div class="row beranda__card3__details">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 beranda__card3__details__left">
+                        <div class="beranda__card3__details__pengajar left">
+                            <img src="/img/johan.jpg">
+                            <div class="pengajar-details">
+                                <p>Pengajar</p>
+                                <h4>Nama Pengajar</h4>
+                            </div>
+                            <!-- <h4><span class="fas fa-chalkboard-teacher"></span> Guru</h4> -->
+                        </div>
+                        <div class="beranda__card3__details__waktu left">
+                            <img src="/img/calendar.png">
+                            <div class="waktu-details">
+                                <p style="color:red; font-weight: lighter;">Tue 11: 00</p>
+                                <h4>05 April 2022 11:00 (GMT +07:00)</h4>
+                            </div>
+                            <!-- <h4><span class="fas fa-chalkboard-teacher"></span> Guru</h4> -->
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 beranda__card3__details__rightt">
+                        <div class="beranda__card3__details__pelajaran left">
+                            <img src="/img/language.png">
+                            <div class="pelajaran-details">
+                                <h4>ESP BE SE - Beginner 1</h4>
+                                <p>Lesson 8</p>
+                            </div>
+                            <!-- <h4><span class="fas fa-chalkboard-teacher"></span> Guru</h4> -->
+                        </div>
+                        <div class="beranda__card3__details__sisa-waktu left">
+                            <img src="/img/clock.png">
+                            <div class="sisa-waktu-details">
+                                <h4>Sisa Waktu</h4>
+                                <p>03 Hari <span>|</span> 13 Jam <span>|</span> 30 Menit <span>|</span> 41 Detik</p>
+                                <button class="btn-msk-kls">Masuk Kelas</button>
+                            </div>
+                            <!-- <h4><span class="fas fa-chalkboard-teacher"></span> Guru</h4> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%-include('partials/footer') %>
