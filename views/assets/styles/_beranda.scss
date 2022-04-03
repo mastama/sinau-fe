@@ -1,0 +1,92 @@
+.beranda {
+  width: 99%;
+  margin: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  .card {
+    margin: 1rem;
+    border-radius: 0.8rem;
+    background-color: rgb(245, 245, 245);
+  }
+
+  // CARD 1//
+  &__card1 {
+    &__txt {
+      padding: 2rem 3rem;
+      //flex: 1 1 90rem;
+      // background-color: lavender;
+    }
+    &__img {
+      flex: 1 1 0rem;
+      display: flex;
+      justify-content: flex-end;
+      //background-color: lavender;
+      img {
+        flex: 1 1 0rem;
+        max-width: 11rem;
+        height: auto;
+      }
+    }
+  }
+
+  // CARD 2//
+  &__card2 {
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    h3 {
+      margin: 0rem 3rem;
+      color: gray;
+    }
+  }
+
+  &__card3 {
+    min-height: 20vh;
+    h3 {
+      padding: 0.5rem 3rem;
+    }
+    .left,
+    .right {
+      margin: 0rem 3rem 2rem 3rem;
+      // background-color: lavender;
+      display: flex;
+      align-items: center;
+      p,
+      h4,
+      .btn-msk-kls {
+        margin: 0.2rem 1rem;
+      }
+      img {
+        max-width: 5rem;
+      }
+    }
+    &__details__pengajar {
+      //background-color: lavender;
+      img {
+        max-width: 5rem;
+        border-radius: 50%;
+      }
+    }
+    .sisa-waktu-details {
+      p {
+        color: red;
+        font-weight: lighter;
+      }
+      span {
+        color: lightgrey;
+      }
+    }
+    .btn-msk-kls {
+      background-color: #3e64ff;
+      color: white;
+      border-radius: 0.3rem;
+      border: none;
+      padding: 0.3rem 1.5rem;
+    }
+  }
+}
+
+// .inites {
+//   background-color: pink;
+// }
