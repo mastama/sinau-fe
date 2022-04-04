@@ -33,6 +33,11 @@ app.get('/home', (req, res) => {
   res.render('pages/home/index');
 });
 
+// home routes
+app.get('/presensi-guru', (req, res) => {
+  res.render('pages/presensi/presensiguru');
+});
+
 // classes routes
 app.get('/classes', (req, res) => {
   res.render('pages/classes/index');
