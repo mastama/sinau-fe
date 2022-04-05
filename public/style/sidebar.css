@@ -10,6 +10,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   /* ===== Colors ===== */
   --primary-color: #0e4bf1;
