@@ -1,6 +1,7 @@
 .box-judul {
   border: 2px solid var(--text-color);
   margin-top: 60px;
+  margin-bottom: 20px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -24,6 +25,7 @@
   margin-top: 1.5rem;
   font-size: 24px;
   font-weight: 700;
+  color: var(--text-color);
 }
 
 .container-card {
@@ -59,7 +61,16 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: var(--box1-color);
+  background-color: var(--box4-color);
+}
+
+.card-body-presensi-1 {
+  padding: 10px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--box5-color);
 }
 
 .title-card {
@@ -77,13 +88,45 @@
 }
 
 .btn-card {
-  background-color: var(--primary-color);
+  background-color: var(--btn-box1-color);
   border-radius: 10px;
-  color: var(--panel-color);
+  color: var(--text-color-white);
   padding: 10px;
   cursor: pointer;
 }
 
-.btn-card:hover {
-  background-color: var(--box3-color);
+.btn-card-1 {
+  background-color: var(--btn-box2-color);
+  border-radius: 10px;
+  color: var(--text-color-white);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.title-absen,
+.title-absen1 {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.title-absen1 {
+  margin-bottom: 30px;
+}
+
+.btn-presensi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type='submit'] {
+  background-color: var(--btn-box1-color);
+  border-radius: 10px;
+  color: var(--text-color-white);
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  margin-top: 20px;
 }

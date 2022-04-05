@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presensi Guru</title>
     <link rel="stylesheet" href="style/presensiguru.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
   </head>
   <body>
     <%- include('../../partials/sidebar.ejs') %>
@@ -47,31 +48,39 @@
         <span class="txt-judul-2">Tetap semangat belajar dan selalu jaga kesehatan</span>
         <span class="txt-judul-2">#sinaudirumah</span>
       </div>
-      <h1 class="title-presensi-guru">Mata Pelajaran</h1>
-      <div class="container-card">
-        <div class="card-presensi">
-          <div class="card-header-presensi">
-            <img src="assets/presensi/mosque.jpg" alt="Mosque" />
-          </div>
-          <div class="card-body-presensi">
-            <span class="title-card">Agama Islam</span>
-            <span class="desc-card">Kelas : 12</span>
-            <a class="btn-card" href="presensi-table">Absensi</a>
-          </div>
+      <h2 class="title-absen">Kelas : 12</h2>
+      <h2 class="title-absen1">Mata Pelajaran : Agama Islam</h2>
+
+      <form action="">
+        <table id="table_id" class="display">
+          <thead>
+            <tr>
+              <th>NIS</th>
+              <th>Nama</th>
+              <th>Presensi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>34247321</td>
+              <td>John Doe</td>
+              <td><input type="radio" name="presensi" value="Hadir" /><span> Hadir</span> <input type="radio" name="presensi" value="Izin" /><span> Izin</span> <input type="radio" name="presensi" value="Alpha" /><span> Alpha</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="btn-presensi">
+          <input type="submit" value="Submit" />
         </div>
-        <div class="card-presensi">
-          <div class="card-header-presensi">
-            <img src="assets/presensi/history.jpg" alt="Mosque" />
-          </div>
-          <div class="card-body-presensi-1">
-            <span class="title-card">Sejarah</span>
-            <span class="desc-card">Kelas : 11</span>
-            <a class="btn-card-1" href="presensi-table">Absensi</a>
-          </div>
-        </div>
-      </div>
+      </form>
       <!-- Ubah Komponen sampai disini -->
     </section>
     <script src="js/sidebar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#table_id').DataTable();
+      });
+    </script>
   </body>
 </html>

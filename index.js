@@ -33,9 +33,14 @@ app.get('/home', (req, res) => {
   res.render('pages/home/index');
 });
 
-// home routes
+// presensi guru routes
 app.get('/presensi-guru', (req, res) => {
   res.render('pages/presensi/presensiguru');
+});
+
+// presensi table guru routes
+app.get('/presensi-table', (req, res) => {
+  res.render('pages/presensi/presensitable');
 });
 
 // classes routes
