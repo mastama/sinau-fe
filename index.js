@@ -26,10 +26,6 @@ app.get('/', (req, res) => {
   res.render('pages/hpBeforeLogin/index');
 });
 
-app.get('/home', (req, res) => {
-    res.render("home");
-})
-
 // contact routes
 app.get('/contact', (req, res) => {
   res.render('pages/contactUs/index');
@@ -40,9 +36,14 @@ app.get('/home', (req, res) => {
   res.render('pages/home/index');
 });
 
-// home routes
+//routes setalah login
+app.get('/dashboard', (req, res) => {
+  res.render('pages/dashboard/index');
+});
+
+// presensi guru routes
 app.get('/presensi-guru', (req, res) => {
-  res.render('pages/presensi/presensiguru');
+  res.render('pages/presensi/index');
 });
 
 // classes routes
