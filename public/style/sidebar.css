@@ -6,6 +6,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 :root {
   /* ===== Colors ===== */
   --primary-color: #0e4bf1;
@@ -139,15 +147,6 @@ body.dark .nav-links li a:hover i,
 body.dark .nav-links li a:hover .link-name {
   color: var(--text-color);
 }
-.menu-items .logout-mode {
-  padding-top: 10px;
-  border-top: 1px solid var(--border-color);
-}
-.menu-items .mode {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
 .menu-items .mode-toggle {
   position: absolute;
   right: 14px;
@@ -217,34 +216,65 @@ nav.close ~ .dashboard .top {
   color: var(--text-color);
   cursor: pointer;
 }
-.dashboard .top .search-box {
-  position: relative;
-  height: 45px;
-  max-width: 600px;
-  width: 100%;
-  margin: 0 30px;
+.mode {
+  display: flex;
+  align-items: center;
 }
-.top .search-box input {
-  position: absolute;
-  border: 1px solid var(--border-color);
-  background-color: var(--panel-color);
-  padding: 0 25px 0 50px;
-  border-radius: 5px;
-  height: 100%;
-  width: 100%;
-  color: var(--text-color);
-  font-size: 15px;
-  font-weight: 400;
-  outline: none;
-}
-.top .search-box i {
-  position: absolute;
-  left: 15px;
-  font-size: 22px;
-  z-index: 10;
-  top: 50%;
-  transform: translateY(-50%);
+.txt-dark {
+  font-size: 18px;
+  margin-right: 5px;
+  padding-bottom: 7px;
   color: var(--black-light-color);
+  transition: var(--tran-05);
+}
+.contain-profile {
+  display: flex;
+  align-items: center;
+}
+.uil-angle-down {
+  color: var(--black-light-color);
+  transition: var(--tran-05);
+  font-size: 20px;
+}
+.dropdown:hover .contain-profile {
+  transition: all 0.5s ease;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--panel-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 1rem;
+}
+
+.dropdown-content a {
+  color: var(--text-color);
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.dropdown-content a i {
+  margin-right: 7px;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--box1-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.top-right-side {
+  display: flex;
+  align-items: center;
 }
 .top img {
   width: 40px;
@@ -339,7 +369,6 @@ nav.close ~ .dashboard .top {
   white-space: nowrap;
   color: var(--text-color);
 }
-
 @media (max-width: 1000px) {
   nav {
     width: 73px;
@@ -393,6 +422,9 @@ nav.close ~ .dashboard .top {
 @media (max-width: 560px) {
   .dash-content .boxes .box {
     width: 100%;
+  }
+  .txt-dark span {
+    display: none;
   }
 }
 @media (max-width: 500px) {
