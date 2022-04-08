@@ -31,6 +31,7 @@ a {
   --title-icon-color: #fff;
   --btn-box1-color: #30aadd;
   --btn-box2-color: #4d77ff;
+  --star-color: #612897;
 
   /* ====== Transition ====== */
   --tran-05: all 0.5s ease;
@@ -59,6 +60,7 @@ body.dark {
   --title-icon-color: #ccc;
   --btn-box1-color: #ccc;
   --btn-box2-color: #ccc;
+  --star-color: yellow;
 }
 
 nav {
@@ -232,7 +234,14 @@ nav.close ~ .dashboard .top {
 }
 .txt-dark {
   font-size: 18px;
-  margin-right: 5px;
+  margin-right: 4px;
+  padding-bottom: 7px;
+  color: var(--black-light-color);
+  transition: var(--tran-05);
+}
+.txt-dark1 {
+  font-size: 18px;
+  margin-left: 4px;
   padding-bottom: 7px;
   color: var(--black-light-color);
   transition: var(--tran-05);
@@ -285,6 +294,7 @@ nav.close ~ .dashboard .top {
 .top-right-side {
   display: flex;
   align-items: center;
+  column-gap: 20px;
 }
 .top img {
   width: 40px;

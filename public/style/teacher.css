@@ -1,0 +1,99 @@
+.box-judul {
+  border: 2px solid var(--text-color);
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt-judul-1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.txt-judul-2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.card-founder {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  border: 2px solid var(--text-color);
+}
+
+.card-teacher {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  border: 2px solid var(--text-color);
+  width: 430px;
+  margin-top: 2rem;
+}
+
+.container-card-teacher {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 0.7rem;
+}
+
+.context-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-teacher {
+  height: 80px;
+}
+
+.context-desc {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.motto {
+  font-size: 14px;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.bxs-star,
+.bx-star,
+.bxs-star-half {
+  color: var(--star-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.uil-instagram-alt {
+  color: #c32aa3;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.uil-linkedin {
+  font-weight: 500;
+  font-size: 30px;
+  color: #007bb5;
+}
