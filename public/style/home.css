@@ -1,0 +1,98 @@
+.box-judul {
+  border: 2px solid var(--text-color);
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt-judul-1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.txt-judul-2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.card-jadwal {
+  border: 2px solid var(--text-color);
+}
+
+.card-header {
+  background-color: var(--text-color-white);
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--text-color);
+  padding: 0.5rem;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.card-body {
+  background-color: var(--black-light-color-1);
+  padding: 1.9rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.container-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-teacher {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.name-teacher .bxs-user-badge,
+.name-teacher .bxs-calendar-check,
+.name-teacher .bxs-book,
+.name-teacher .bx-chalkboard {
+  font-size: 38px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.name-teacher span {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-in {
+  background-color: var(--btn-box1-color);
+  border-radius: 10px;
+  color: var(--text-color-white);
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .card-header {
+    font-size: 17px;
+  }
+  .card-body {
+    padding: 0.3rem;
+  }
+  .container-card {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 1.2rem;
+  }
+}
