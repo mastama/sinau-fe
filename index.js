@@ -70,6 +70,11 @@ app.get('/materi', (req, res) => {
   res.render('pages/materi/index');
 });
 
+// materi
+app.get('/progress', (req, res) => {
+  res.render('pages/progress/index');
+});
+
 app.listen(port, () => {
   console.log(`Server is listening on ${port}`);
 });

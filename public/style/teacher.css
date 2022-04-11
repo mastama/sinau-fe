@@ -97,3 +97,40 @@
   font-size: 30px;
   color: #007bb5;
 }
+
+@media (max-width: 720px) {
+  .card-founder,
+  .card-teacher {
+    flex-direction: column;
+    padding: 0.7rem;
+  }
+  .context-img {
+    margin-bottom: 10px;
+  }
+  .img-teacher {
+    height: 60px;
+  }
+  .name {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .motto {
+    font-size: 12px;
+  }
+  .star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+  }
+  .bxs-star,
+  .bx-star,
+  .bxs-star-half {
+    font-size: 14px;
+  }
+  .uil-instagram-alt,
+  .uil-linkedin {
+    font-size: 20px;
+  }
+}

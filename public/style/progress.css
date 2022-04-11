@@ -1,0 +1,78 @@
+.box-progress {
+  margin-top: 60px;
+  border: 2px solid var(--text-color);
+  padding: 1rem;
+}
+
+.title-progress {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.box-sesi {
+  border: 2px solid var(--text-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+  margin-top: 2rem;
+}
+
+.box-sesi h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.box-sesi span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.context-progress {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+}
+
+.context-progress label {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.context-progress span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.box-periodik {
+  border: 2px solid var(--text-color);
+  padding: 0 0 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.box-periodik h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.box-periodik.test {
+  margin-bottom: 2rem;
+}
