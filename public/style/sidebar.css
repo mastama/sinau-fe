@@ -32,6 +32,9 @@ a {
   --btn-box1-color: #30aadd;
   --btn-box2-color: #4d77ff;
   --star-color: #612897;
+  --icon-color-1: #4da3ff;
+  --icon-color-2: #e81e1e;
+  --icon-color-3: #19ab42;
 
   /* ====== Transition ====== */
   --tran-05: all 0.5s ease;
@@ -61,6 +64,9 @@ body.dark {
   --btn-box1-color: #ccc;
   --btn-box2-color: #ccc;
   --star-color: yellow;
+  --icon-color-1: #ccc;
+  --icon-color-2: #ccc;
+  --icon-color-3: #ccc;
 }
 
 nav {
@@ -445,6 +451,10 @@ nav.close ~ .dashboard .top {
   }
   .txt-dark span {
     display: none;
+  }
+
+  .dashboard .top {
+    justify-content: flex-end;
   }
 }
 @media (max-width: 500px) {

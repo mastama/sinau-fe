@@ -1,0 +1,148 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-materi {
+  margin-top: 60px;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  font-weight: 800;
+}
+
+.video-desc {
+  margin-top: 1rem;
+  border: 2px solid var(--text-color);
+  padding: 1rem;
+}
+
+.desc-materi {
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.container-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.wrapper-file {
+  width: 400px;
+  padding: 1rem;
+  border: 2px solid var(--text-color);
+  margin-top: 15px;
+  column-gap: 10px;
+}
+
+.align-file {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.link-materi {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.link-materi:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.bxs-file {
+  color: var(--icon-color-1);
+}
+
+.bxs-file-pdf {
+  color: var(--icon-color-2);
+}
+
+.bxs-cloud-upload {
+  color: var(--icon-color-3);
+}
+
+@media (max-width: 720px) {
+  .title-materi {
+    font-size: 16px;
+  }
+  .desc-materi {
+    font-size: 12px;
+  }
+  .link-materi {
+    font-size: 14px;
+  }
+}
